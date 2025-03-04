@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="Buy.css">
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<header>
+  <nav class="navbar">
+      <div class="logo">
+          <a href="index.html">
+              <img src="images/sbc logo.png" alt="Logo">
+          </a>
+      </div>
+  
+      <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="buy.html">Buy Our Books!</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="upcoming.html">Coming Soon</a></li>
+          <li><a href="legal.html">Legal</a></li>
+      </ul>
+  
+      <!-- Hamburger Menu -->
+      <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+  </nav>
+
+  <script src="navbar.js"></script>
+<body>
+
+
+    
+
+    <script async
+    src="https://js.stripe.com/v3/buy-button.js">
+  </script>
+  
+  <script async
+  src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<div class="button-container">
+  <stripe-buy-button
+      buy-button-id="buy_btn_1Qr9yLGPPXAjKW9YCGUDhJJa"
+      publishable-key="pk_live_51Qp0dzGPPXAjKW9YdsqXPBIUN7fyJmzDYz8Q18CfzUV2xkXWb3WTUgNIV72KpgKMzRQIs2lDzMUjSWfRzQYNub9x00cZbYbeNM">
+  </stripe-buy-button>
+</div>
+
+</body>
+</html>

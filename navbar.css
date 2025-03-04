@@ -1,0 +1,62 @@
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 15px 5%;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo {
+    flex-shrink: 0; /* Prevents it from shrinking */
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Ensures it stays centered */
+    gap: 20px;
+    margin: 0 auto; /* Centers the links */
+    padding: 0;
+    flex-grow: 1; /* Makes sure it takes up available space */
+    max-width: 900px; /* Prevents the menu from stretching too far */
+}
+
+.nav-links li {
+    display: inline-block;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    white-space: nowrap;
+}
+
+.nav-links a:hover {
+    color: #FFD700;
+}
+
+/* Fix for Desktop Overflow Issues */
+@media (min-width: 1025px) {
+    .navbar {
+        padding: 15px 10%; /* Increase padding so items don’t hit screen edges */
+    }
+    
+    .nav-links {
+        max-width: 70%; /* Prevents links from going too far right */
+    }
+}
