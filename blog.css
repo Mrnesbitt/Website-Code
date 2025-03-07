@@ -237,3 +237,45 @@ body {
         font-size: 1.4rem;
     }
 }
+
+/* Style for Navigation Buttons */
+.Navigation {
+    display: inline-block;
+    background-color: #28a745; /* Green color */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Make sure the anchor tag inside looks like a button */
+.Navigation a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+/* Hover Effect */
+.Navigation:hover {
+    background-color: #48164d; /* Darker green */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+.donation-note {
+    background-color: #fff3cd; /* Light yellow background */
+    color: #856404; /* Dark brown text */
+    padding: 15px;
+    border-left: 5px solid #ffcc00; /* Golden accent */
+    margin: 20px 0;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
