@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comics</title>
-    <link rel="stylesheet" href="blog.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="footer.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Buy Our Books</title>
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="Buy.css" />
 </head>
+<body>
+    <!-- NAVBAR -->
     <nav class="navbar">
         <div class="logo">
             <a href="index.html">
                 <img src="Images/sbc logo.png" alt="Logo">
             </a>
         </div>
-    
+
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="Buy.html">Buy Our Books!</a></li>
@@ -27,25 +29,31 @@
             <li><a href="Donations.html">Contribute</a></li>
             <li><a href="legal.html">Legal</a></li>
         </ul>
-    
-        <!-- Hamburger Menu -->
+
         <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span><p>Menu</p>
         </div>
     </nav>
-    <script src="navbar.js"></script>
-<body>
-    <div class="Comic-Container"> 
-        <h1>Your One Stop Shop</h1>
-        <h2>Gems & Journeys Pilot Series</h2>
-        <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://www.webtoons.com/en/canvas/gems-and-journeys/list?title_no=805507" data-iframely-url="//iframely.net/NgBX9g6"></a></div></div><script async src="//iframely.net/embed.js"></script>
+
+    <!-- MAIN BOOK CARD SECTION -->
+    <div class="book-box">
+        <div class="book-card">
+            <div class="book-img">
+                <img src="https://image-hub-cloud.lightningsource.com/2011-04-01/Images/front_cover/x200/sku/9798218625467.jpg?viewkey=f510ae7868cdc8cccbebe80e6445b84ca74a45fe0c28ae022b58bd6fb2ce1d3f" alt="Gems and Journeys Cover" />
+            </div>
+            <div class="book-info">
+                <h2>Gems and Journeys - Chapter 1</h2>
+                <p class="author">Nesbitt, Steven and LaBoard, Kymet</p>
+                <a href="https://shop.ingramspark.com/b/084?params=O4HkZUmhfJ5q2u5UkmnqkvtBKjD0mtsIATSz15RJS5R" target="_blank" class="buy-button">Buy Now</a>
+            </div>
+        </div>
     </div>
+
+    <!-- FOOTER -->
     <footer>
         <div class="footer-container">
             <div class="footer-links">
-                <a href="about.html">About </a>
+                <a href="about.html">About</a>
                 <a href="legal.html">Legal</a>
                 <a href="Donations.html">Donations</a>
             </div>
@@ -56,6 +64,7 @@
             <p>&copy; 2025 Simple But Complex. All Rights Reserved.</p>
         </div>
     </footer>
-    
+
+    <script src="navbar.js"></script>
 </body>
 </html>
