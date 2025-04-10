@@ -62,7 +62,7 @@ body {
 }
 
 .preview-strip {
-    text-align: center;
+    text-align: left;
     margin: 40px auto;
     padding: 20px;
     max-width: 800px;
@@ -75,18 +75,16 @@ body {
 
 .preview-images {
     display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
+    justify-content: space-between; /* This ensures the images are spaced out evenly */
+    gap: 10px; /* Adjust this value if you want more or less space between images */
 }
 
 .preview-images img {
-    width: 150px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    max-width: 30%; /* Ensures each image takes up about a third of the container's width */
+    height: auto; /* Keeps the image's aspect ratio intact */
+    border-radius: 10px; /* Optional: keeps your border-radius for the images */
 }
+
 
 .preview-images img:hover {
     transform: scale(1.05);
