@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="Buy.css" />
 </head>
 <body>
+    <!-- Lightbox Animation -->
+    <div id="lightbox" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:9999;" onclick="this.style.display='none'">
+        <img id="lightbox-img" src="" style="max-width:90%; max-height:90%; border-radius:10px;" />
+    </div>
+
     <!-- NAVBAR -->
     <nav class="navbar">
         <div class="logo">
@@ -45,21 +50,18 @@
                 <h2>Gems and Journeys - Chapter 1</h2>
                 <p class="author">Nesbitt, Steven and LaBoard, Kymet</p>
                 <a href="https://shop.ingramspark.com/b/084?params=O4HkZUmhfJ5q2u5UkmnqkvtBKjD0mtsIATSz15RJS5R" target="_blank" class="buy-button">Buy Now</a>
+                
+                <div class="preview-strip">
+                    <h3>Preview Stills</h3>
+                    <div class="preview-images">
+                        <img src="Images/Page 1.png" alt="Preview 1">
+                        <img src="Images/page 5.png" alt="Preview 2">
+                        <img src="Images/Page 11 Transition.png" alt="Preview 3">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-                <!-- BOOK PREVIEW STRIP -->
-<div class="preview-strip">
-    <h3>Preview Stills</h3>
-    <div class="preview-images">
-        <img src="Images/Page 1.png" alt="Preview 1">
-        <img src="Images/page 5.png" alt="Preview 2">
-        <img src="Images/Page 11 Transition.png" alt="Preview 3">
-    </div>
-</div>
-
-
 
     <!-- FOOTER -->
     <footer>
@@ -78,5 +80,13 @@
     </footer>
 
     <script src="navbar.js"></script>
+    <script>
+        document.querySelectorAll('.preview-images img').forEach(img => {
+            img.onclick = () => {
+                document.getElementById('lightbox-img').src = img.src;
+                document.getElementById('lightbox').style.display = 'flex';
+            };
+        });
+    </script>
 </body>
 </html>
