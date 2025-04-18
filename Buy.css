@@ -5,6 +5,11 @@ body {
     background-color: #fff;
 }
 
+h3 {
+    font-family: 'Consolas', 'Courier New', Tahoma, sans-serif; 
+    font-size: 1.5;
+}
+
 .book-box {
     display: flex;
     justify-content: center;
