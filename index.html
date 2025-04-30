@@ -8,31 +8,17 @@
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="Banner.css">
     <link rel="stylesheet" href="footer2.css">
-
-
-    <!-- Malichimp Pop-up -->
-
-   <!-- Mailchimp Pop-up -->
-<script id="mcjs">
-    (function(c, h, i, m, p) {
-        m = c.createElement(h),
-        p = c.getElementsByTagName(h)[0],
-        m.async = 1;
-        m.src = i;
-        p.parentNode.insertBefore(m, p);
-    })(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/25f769ca7807d5e54b44d7f1c/d0a58b98d63dc1d7160d79daf.js");
-</script>
-
+    <!-- Mailchimp Pop-up -->
+    <script id="mcjs">
+        (function(c, h, i, m, p) {
+            m = c.createElement(h),
+            p = c.getElementsByTagName(h)[0],
+            m.async = 1;
+            m.src = i;
+            p.parentNode.insertBefore(m, p);
+        })(document, "script", "https://chimpstatic.com/mcjs-connected/js/users/25f769ca7807d5e54b44d7f1c/d0a58b98d63dc1d7160d79daf.js");
+    </script>
 </head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VRZM8R88EQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-VRZM8R88EQ');
-</script>
 
 <body>
     <header>
@@ -42,11 +28,9 @@
                     <img src="Images/sbc logo.png" alt="Logo">
                 </a>
             </div>
-        
-           
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="https://simplebutcomplex.com/store/">Buy Our Books!</a></li>
+                <li><a href="Buy.html">Buy Our Books!</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="Music.html">Music</a></li>
                 <li><a href="Videos.html">Videos</a></li>
@@ -56,101 +40,73 @@
                 <li><a href="Donations.html">Contribute</a></li>
                 <li><a href="legal.html">Legal</a></li>
             </ul>
-        
-            <!-- Hamburger Menu -->
             <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
                 <p>Menu</p>
             </div>
-
         </nav>
+    </header>
 
-        <script src="navbar.js"></script>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1295657979806422"
-     crossorigin="anonymous"></script>
-
-        <div class="content">
-            <div class="video-banner">
-
-                <video autoplay muted loop playsinline>
-                    <source src="Images/SBC TRailer.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="button-container">
-                    
-                    <a href="blog.html" class="button">Tap Here for Blog</a>
-                </div>
-            </div>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <!-- Placeholder for the image -->
+        <div class="hero-placeholder">
+            <img src="Images/sbc logo.png" alt="Hero Placeholder">
         </div>
-
-    <div class="content">
-        
-        <div class="parallax" style="background-image: url('Images/Screenshot\ 2025-03-03\ 180428.jpg');">
-            <div class="new-release-badge">New Release</div>
-            <div class="button-container">
-                <a href="https://simplebutcomplex.com/store/" class="button">Buy Our Books</a>
-               
-            </div>
-            
+        <!-- Hero Text below the image -->
+        <div class="hero-overlay">
+            <h1>Welcome to Simple But Complex</h1>
+            <p>Your gateway to indie stories, raw music, street comics, and more. Dive into what we’re building, one layer at a time.</p>
+            <a href="blog.html" class="button">Explore the Blog</a>
         </div>
-    </div>
+    </section>
 
-    <div class="content">
-        <div class="parallax" style="background-image: url('Images/hand\ out.jpg');">
-            <div class="button-container">
-                <a href="Donations.html" class="button">Donate</a>
+    <!-- Section Preview Grid -->
+    <section class="section-grid">
+        <a href="Buy.html" class="section-card" style="background-image: url('Images/Screenshot 2025-03-03 180428.jpg');">
+            <span>Buy Our Books</span>
+        </a>
+        <a href="blog.html" class="section-card" style="background-image: url('Images/blog-684748_1280.jpg');">
+            <span>Blog</span>
+        </a>
+        <a href="Music.html" class="section-card" style="background-image: url('Images/microphone-7495739_1280.jpg');">
+            <span>🎧 Music</span>
+        </a>
+        <a href="Videos.html" class="section-card" style="background-image: url('Images/tablet-7025900_1280.jpg');">
+            <span>🎥 Videos</span>
+        </a>
+        <a href="about.html" class="section-card" style="background-image: url('Images/space-shuttle-774_1280.jpg');">
+            <span>📖 Mission Statement</span>
+        </a>
+        <a href="upcoming.html" class="section-card" style="background-image: url('Images/book-8295812_1280.jpg');">
+            <span>🚧 Coming Soon</span>
+        </a>
+        <a href="Donations.html" class="section-card" style="background-image: url('Images/hand-2710098_1280.jpg');">
+            <span>💸 Contribute</span>
+        </a>
+        <a href="legal.html" class="section-card" style="background-image: url('Images/hammer-719066_1280.jpg');">
+            <span>⚖️ Legal</span>
+        </a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="legal.html">Legal</a>
+                <a href="Donations.html">Donations</a>
             </div>
-        </div>
-    </div>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1295657979806422"
-     crossorigin="anonymous"></script>
-
-<!-- Uni Ads -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-1295657979806422"
-     data-ad-slot="5827552494"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
-    <div class="content">
-        <div class="parallax" style="background-image: url('Images/microphone.jpg');">
-            <div class="button-container">
-                <a href="https://soundcloud.com/street-comics" class="button">Tap Here Music</a>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/datboynes/" target="_blank">Instagram</a>
+                <a href="https://bsky.app/profile/dayboynes.bsky.social" target="_blank">BlueSky</a>
             </div>
+            <p>&copy; 2025 Simple But Complex. All Rights Reserved.</p>
         </div>
-    </div>
+    </footer>
 
-    <div class="content">
-        <div class="parallax" style="background-image: url('Images/youtube.jpg');">
-            <div class="button-container">
-                <a href="https://www.youtube.com/@TheStreetComic" class="button">Press for Videos</a>
-            </div>
-        </div>
-    </div>
+    <script src="navbar.js"></script>
 </body>
-
-</div>
-
-
-<footer>
-    <div class="footer-container">
-        <div class="footer-links">
-            <a href="about.html">About </a>
-            <a href="legal.html">Legal</a>
-            <a href="Donations.html">Donations</a>
-        </div>
-        <div class="footer-social">
-            <a href="https://www.instagram.com/datboynes/" target="_blank">Instagram</a>
-            <a href="https://bsky.app/profile/dayboynes.bsky.social" target="_blank">BlueSky</a>
-        </div>
-        <p>&copy; 2025 Simple But Complex. All Rights Reserved.</p>
-    </div>
-</footer>
-
 </html>
