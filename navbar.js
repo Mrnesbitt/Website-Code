@@ -7,3 +7,9 @@ document.addEventListener("DOMContentLoaded", function() {
         hamburger.classList.toggle("active");
     });
 });
+
+navbar.js
+document.getElementById('hamburger').addEventListener('click', function() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active'); // Add or remove the active class
+});
