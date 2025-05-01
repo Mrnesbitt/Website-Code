@@ -1,0 +1,99 @@
+/* Global Styles */
+html, body {
+    height: 100%;           /* Ensures the body takes full height of the viewport */
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', sans-serif;
+    background-color: #f8f5e9;
+    display: flex;
+    flex-direction: column; /* Stack the body content vertically */
+}
+
+/* Content area */
+.content-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    flex: 1; /* Allow content to grow and push the footer down */
+}
+
+/* Text Section */
+.text-section {
+    flex: 1;
+    max-width: 500px; /* Limit width on larger screens */
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Section */
+.image-section {
+    max-width: 500px;
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-section, .image-section {
+        width: 90%; /* Set max width for each section */
+        max-width: 400px; /* Limit the width on mobile */
+        padding: 15px;
+    }
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: relative;
+    bottom: 0; /* Stays at the bottom */
+}
+
+/* Footer Container */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.footer-links, .footer-social {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-links a,
+.footer-social a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: #FFD700;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin-top: 10px;
+}

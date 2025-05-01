@@ -1,0 +1,4 @@
+*** Skip Cart and Direct Checkout Free Change log ***
+
+2025-01-02 - version 1.0.0
+* Other - Initial release of the plugin.

@@ -1,0 +1,91 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.book-box {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    border: 1px solid #DCDCDC;
+    border-radius: 12px;
+    padding: 15px;
+    max-width: 600px;
+    background-color: #fafafa;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.book-img img {
+    width: 120px;
+    height: auto;
+    border-radius: 6px;
+}
+
+.book-info {
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+.book-info h2 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.book-info .author {
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.buy-button {
+    background-color: #FEBE10;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+    background-color: #e5aa0d;
+}
+
+.preview-strip {
+    text-align: left;
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.preview-strip h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.preview-images {
+    display: flex;
+    justify-content: space-between; /* This ensures the images are spaced out evenly */
+    gap: 10px; /* Adjust this value if you want more or less space between images */
+}
+
+.preview-images img {
+    max-width: 30%; /* Ensures each image takes up about a third of the container's width */
+    height: auto; /* Keeps the image's aspect ratio intact */
+    border-radius: 10px; /* Optional: keeps your border-radius for the images */
+}
+
+
+.preview-images img:hover {
+    transform: scale(1.05);
+}

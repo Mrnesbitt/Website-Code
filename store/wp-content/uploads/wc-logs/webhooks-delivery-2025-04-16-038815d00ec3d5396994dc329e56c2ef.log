@@ -1,0 +1,68 @@
+2025-04-16T20:29:19+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 3d18c5e5a35b2e8e12d7187e212cd6fa
+            [Date] => Apr 16, 2025 @ 20:29
+            [URL] => https://solution.tiktokshop.com/api/plugin/webhook/process_woo_webhook?external_business_id=tt4b_woocommerce_67cf5ea3dd228&region=US
+            [Duration] => 0.25418
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/9.7.1 Hookshot (WordPress/6.7.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://simplebutcomplex.com/store/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => 4QLqvS04Nkp7/hXc0DLq9N8vzBiwQmSIFOawqx2NqtQ=
+                            [X-WC-Webhook-ID] => 46
+                            [X-WC-Webhook-Delivery-ID] => 3d18c5e5a35b2e8e12d7187e212cd6fa
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => WpOrg\Requests\Utility\CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [server] => nginx
+                                    [content-type] => application/json; charset=utf-8
+                                    [content-length] => 90
+                                    [x-tt-logid] => 202504162029225BC4DA6EF86693115A44
+                                    [x-tt-trace-host] => 01e3d775a90b79921eb55b55733a8298b18fc98f9000b48102cb546ecfff7440506f087a3772a71a62d5417da13108e10370bd455566ac24f7320500e5d0cee2e8f353836da28b64355b08f80f6c8dd7b734a379215a740b3a36bdf91d88cf3d5ff1189b112409fcdaa8055766e1e0bce1
+                                    [x-tt-trace-id] => 00-2504162029225BC4DA6EF86693115A44-381B67066AA88096-00
+                                    [x-origin-response-time] => 22,23.50.129.210
+                                    [x-akamai-request-id] => 193c508.2cd4e64
+                                    [expires] => Wed, 16 Apr 2025 20:29:22 GMT
+                                    [cache-control] => max-age=0, no-cache, no-store
+                                    [pragma] => no-cache
+                                    [date] => Wed, 16 Apr 2025 20:29:22 GMT
+                                    [x-cache] => TCP_MISS from a23-62-227-17.deploy.akamaitechnologies.com (AkamaiGHost/22.0.1.1-1eb06f337eca40b3482aa107e6b7c368) (-)
+                                    [x-cache-remote] => TCP_MISS from a23-50-129-210.deploy.akamaitechnologies.com (AkamaiGHost/22.1.0-0ca00c147d19d7f8aed87fe96e7f5f75) (-)
+                                    [x-tt-trace-tag] => id=16;cdn-cache=miss;type=dyn
+                                    [server-timing] => Array
+                                        (
+                                            [0] => cdn-cache; desc=MISS, edge; dur=9, origin; dur=22
+                                            [1] => inner; dur=11
+                                        )
+
+                                    [x-parent-response-time] => 30,23.62.227.17
+                                    [bypass-origin] => solution.tiktokshops.us
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)

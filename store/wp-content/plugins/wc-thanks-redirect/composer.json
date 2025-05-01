@@ -1,0 +1,35 @@
+{
+    "name": "neebplugins/wc-thanks-redirect",
+    "description": "Thank you page for WooCommerce",
+    "type": "premium-plugin",
+    "license": "gpl2.0",
+    "autoload": {
+        "psr-4": {
+            "NeeBPlugins\\Wctr\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "neebplugins",
+            "email": "neebplugins@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.4",
+        "freemius/wordpress-sdk": "2.11.0"
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "freemius/wordpress-sdk",
+                "version": "2.11.0",
+                "dist": {
+                    "type": "zip",
+                    "url": "/tmp/wordpress-sdk-2.11.0.zip"
+                }
+            }
+        }
+    ]
+}

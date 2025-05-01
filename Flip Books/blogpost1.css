@@ -1,0 +1,142 @@
+
+h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2rem; /* Adjust size as needed */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    font-family: 'Consolas', 'Courier New', Tahoma, sans-serif; 
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.6rem; /* Adjust size as needed */
+    font-weight: normal;
+    margin-bottom: 1.5rem;
+}
+
+/* Global Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px / 1.8 "Lato", sans-serif;
+    color: #777;
+}
+
+/* Navbar Styles */
+.navbar {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.navbar li {
+    margin: 0 10px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #FFD700;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between; /* Space between text and image */
+    align-items: flex-start; /* Align items to the top */
+    padding: 20px; /* Padding around the container */
+}
+
+.text-section {
+    flex: 1; /* Allow text section to grow */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: flex-start; /* Align text to the top */
+    align-items: flex-start; /* Align text to the left */
+    text-align: left; /* Align text to the left within the text section */
+    background-color: #f8f8f8; /* Light background color */
+    padding: 30px; /* Increase padding for more space */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly larger shadow for depth */
+    margin-right: 20px; /* Space between text sections */
+}
+
+.image-section {
+    flex: 1; /* Allow image section to grow */
+    display: flex;
+    justify-content: flex-end; /* Align image to the right */
+    padding: 30px; /* Increase padding for more space */
+    border-radius: 8px; /* Optional: rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1)
+}
+
+.responsive-image {
+    width: 100%; /* Image takes full width of the section */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 500px; /* Set a max width for your image */
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+  
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 60%;
+    padding: 5px;
+  }
+  .Navigation-container {
+    bottom: 20px; /* Distance from the bottom */
+    width: 100%; /* Full width of the page */
+    display: flex;
+    justify-content: space-between; /* Space between Previous and Next */
+    padding: 0 20px; /* Padding for left and right space */
+}
+
+/* Common style for the buttons */
+.page-navigation {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for the buttons */
+.page-navigation:hover {
+    background-color: #FFD700; /* Hover color */
+}
+
+/* Position Previous Button on Bottom Left */
+.page-navigation.previous {
+    margin-left: 0;
+}
+
+/* Position Next Button on Bottom Right */
+.page-navigation.next {
+    margin-left: auto; /* Automatically pushes it to the right */
+}
+  

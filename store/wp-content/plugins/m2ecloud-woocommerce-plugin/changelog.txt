@@ -1,0 +1,13 @@
+*** M2E Multichannel Connect ***
+
+2024-10-03 - version 2.1.9
+* Minor fixes
+
+2024-09-30 - version 2.1.8
+* Minor fixes
+
+2023-12-04 - version 2.0.0
+* Plugin prefix changed from M2e_SC
+
+2023-09-18 - version 1.0.0
+* Initial release

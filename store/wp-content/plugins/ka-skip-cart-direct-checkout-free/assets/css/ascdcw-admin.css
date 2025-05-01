@@ -1,0 +1,156 @@
+/* 
+* Nouman Ijaz - Developer
+*/
+#ascdcw_show_checkout_btn_on{
+  height: 30px;
+} 
+#ascdcw_checkout_btn_text_color_on_hover,#ascdcw_checkout_btn_bg_color_on_hover,#ascdcw_checkout_btn_text_color, #ascdcw_checkout_btn_bg_color{
+  width:366px;
+}
+
+
+#ascdcw_checkout_btn_text,#ascdcw_checkout_btn_text_color_on_hover,
+#ascdcw_checkout_btn_bg_color_on_hover,#ascdcw_checkout_btn_text_color,
+#ascdcw_checkout_btn_bg_color,.colorpickpreview,.forminp-multiselect,.woocommerce table.form-table th label{
+  display: none !important;}  
+  .colorpickpreview{display:none !important}
+/* .show {
+    display: block !important;  
+}  */
+
+.colorpickpreview.show {
+  display: inline-block !important;  /* or any other display style */
+}  
+
+/* premium */ 
+.ascdcw-table-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  padding: 20px; 
+}
+ 
+.ascdcw-table {
+  width: 80%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ascdcw-table th, .ascdcw-table td {
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+  font-size: 14px;
+}
+ 
+.ascdcw-table th {
+  background-color: #606060; /* Brand Color */
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+ 
+.ascdcw-table td:first-child {
+  text-align: left;
+  font-weight: 500;
+  color: #333;
+}
+ 
+.ascdcw-table th:nth-child(2),
+.ascdcw-table th:nth-child(3),
+.ascdcw-table td:nth-child(2),
+.ascdcw-table td:nth-child(3) {
+  width: 20%;
+  text-align: center;
+}
+ 
+.ascdcw-check {
+  color: #01a479;
+  font-weight: bold;
+  font-size: 18px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.ascdcw-check:hover {
+  transform: scale(1.2);
+}
+
+.ascdcw-cross {
+  color: #ff4d4d;
+  font-weight: bold;
+  font-size: 18px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.ascdcw-cross:hover {
+  transform: scale(1.2);
+}
+ 
+.ascdcw-pro-upgrade {
+  text-align: center;
+  margin-top: 30px;
+}
+.ascdcw-pro-upgrade a {
+  display: inline-block;
+  background-color: #01a479;
+  color: white; 
+  width: 220px !important;
+  height: 55px !important;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+.ascdcw-pro-upgrade a::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.ascdcw-pro-upgrade a:hover {
+  background-color: #008765;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.ascdcw-pro-upgrade a:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* RESPONSIVE DESIGN FOR MOBILE */
+@media (max-width: 768px) {
+  .ascdcw-table {
+    width: 100%;
+  }
+  .ascdcw-table-wrapper {
+    padding: 10px;
+    overflow-x: auto;
+  }
+  .ascdcw-table th, .ascdcw-table td {
+    font-size: 13px;
+    padding: 12px;
+  }
+  .ascdcw-table th:nth-child(2),
+  .ascdcw-table th:nth-child(3),
+  .ascdcw-table td:nth-child(2),
+  .ascdcw-table td:nth-child(3) {
+    width: 25%;
+  }
+ 
+}
