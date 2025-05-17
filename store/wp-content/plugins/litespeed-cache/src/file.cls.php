@@ -1,10 +1,12 @@
 <?php
+
 /**
  * LiteSpeed File Operator Library Class
  * Append/Replace content to a file
  *
  * @since 1.1.0
  */
+
 namespace LiteSpeed;
 
 defined('WPINC') || exit();
@@ -20,7 +22,7 @@ class File
 	 */
 	public static function is_404($url)
 	{
-		$response = wp_remote_get($url);
+		$response = wp_safe_remote_get($url);
 		$code = wp_remote_retrieve_response_code($response);
 		if ($code == 404) {
 			return true;
@@ -132,6 +134,10 @@ class File
 	 */
 	public static function save($filename, $data, $mkdir = false, $append = false, $silence = true)
 	{
+		if (is_null($filename)) {
+			return $silence ? false : __('Filename is empty!', 'litespeed-cache');
+		}
+
 		$error = false;
 		$folder = dirname($filename);
 
@@ -145,6 +151,10 @@ class File
 
 			try {
 				mkdir($folder, 0755, true);
+				// Create robots.txt file to forbid search engine indexes
+				if (!file_exists(LITESPEED_STATIC_DIR . '/robots.txt')) {
+					file_put_contents(LITESPEED_STATIC_DIR . '/robots.txt', "User-agent: *\nDisallow: /\n");
+				}
 			} catch (\ErrorException $ex) {
 				return $silence ? false : sprintf(__('Can not create folder: %1$s. Error: %2$s', 'litespeed-cache'), $folder, $ex->getMessage());
 			}

@@ -14,6 +14,11 @@ $closest_server = Cloud::get_summary('server.' . Cloud::SVC_CCSS);
 
 $ccss_queue = $this->load_queue('ccss');
 $ucss_queue = $this->load_queue('ucss');
+
+$next_gen = '<code class="litespeed-success">' . $this->cls('Media')->next_gen_image_title() . '</code>';
+
+$ucss_service_hot = $this->cls('Cloud')->service_hot(Cloud::SVC_UCSS);
+$ccss_service_hot = $this->cls('Cloud')->service_hot(Cloud::SVC_CCSS);
 ?>
 
 <h3 class="litespeed-title-short">
@@ -62,10 +67,10 @@ $ucss_queue = $this->load_queue('ucss');
 				<?php $this->build_switch($id); ?>
 				<?php Doc::maybe_on_by_gm($id); ?>
 				<div class="litespeed-desc">
-					<?php if (!$this->conf(Base::O_API_KEY)) : ?>
+					<?php if (!$this->cls('Cloud')->activated()) : ?>
 						<div class="litespeed-callout notice notice-error inline">
 							<h4><?php echo __('WARNING', 'litespeed-cache'); ?></h4>
-							<?php echo Error::msg('lack_of_api_key'); ?>
+							<?php echo Error::msg('qc_setup_required'); ?>
 						</div>
 					<?php endif; ?>
 
@@ -120,14 +125,21 @@ $ucss_queue = $this->load_queue('ucss');
 										<?php if (!empty($v['_status'])) : ?></span><?php endif; ?>
 									<?php if ($pos = strpos($k, ' ')) echo ' (' . __('Vary Group', 'litespeed-cache') . ':' . esc_html(substr($k, 0, $pos)) . ')'; ?>
 									<?php if ($v['is_mobile']) echo ' <span data-balloon-pos="up" aria-label="mobile">📱</span>'; ?>
-									<?php if (!empty($v['is_webp'])) echo ' WebP'; ?>
+									<?php if (!empty($v['is_webp'])) echo ' ' . $next_gen; ?>
 									<br />
 								<?php endforeach; ?>
 							</p>
 						</div>
-						<a href="<?php echo Utility::build_url(Router::ACTION_UCSS, UCSS::TYPE_GEN); ?>" class="button litespeed-btn-success">
-							<?php echo sprintf(__('Run %s Queue Manually', 'litespeed-cache'), 'UCSS'); ?>
-						</a>
+						<?php if ($ucss_service_hot) : ?>
+							<button class="button button-secondary" disabled>
+								<?php echo sprintf(__('Run %s Queue Manually', 'litespeed-cache'), 'UCSS'); ?>
+								- <?php echo sprintf(__('Available after %d second(s)', 'litespeed-cache'), $ucss_service_hot); ?>
+							</button>
+						<?php else : ?>
+							<a href="<?php echo Utility::build_url(Router::ACTION_UCSS, UCSS::TYPE_GEN); ?>" class="button litespeed-btn-success">
+								<?php echo sprintf(__('Run %s Queue Manually', 'litespeed-cache'), 'UCSS'); ?>
+							</a>
+						<?php endif; ?>
 						<?php Doc::queue_issues(); ?>
 					<?php endif; ?>
 				</div>
@@ -175,10 +187,10 @@ $ucss_queue = $this->load_queue('ucss');
 				<?php $this->build_switch($id); ?>
 				<?php Doc::maybe_on_by_gm($id); ?>
 				<div class="litespeed-desc">
-					<?php if (!$this->conf(Base::O_API_KEY)) : ?>
+					<?php if (!$this->cls('Cloud')->activated()) : ?>
 						<div class="litespeed-callout notice notice-error inline">
 							<h4><?php echo __('WARNING', 'litespeed-cache'); ?></h4>
-							<?php echo Error::msg('lack_of_api_key'); ?>
+							<?php echo Error::msg('qc_setup_required'); ?>
 						</div>
 					<?php endif; ?>
 					<?php echo __('Optimize CSS delivery.', 'litespeed-cache'); ?>
@@ -237,14 +249,21 @@ $ucss_queue = $this->load_queue('ucss');
 										<?php if (!empty($v['_status'])) : ?></span><?php endif; ?>
 									<?php if ($pos = strpos($k, ' ')) echo ' (' . __('Vary Group', 'litespeed-cache') . ':' . esc_html(substr($k, 0, $pos)) . ')'; ?>
 									<?php if ($v['is_mobile']) echo ' <span data-balloon-pos="up" aria-label="mobile">📱</span>'; ?>
-									<?php if (!empty($v['is_webp'])) echo ' WebP'; ?>
+									<?php if (!empty($v['is_webp'])) echo ' ' . $next_gen; ?>
 									<br />
 								<?php endforeach; ?>
 							</p>
 						</div>
-						<a href="<?php echo Utility::build_url(Router::ACTION_CSS, CSS::TYPE_GEN_CCSS); ?>" class="button litespeed-btn-success">
-							<?php echo sprintf(__('Run %s Queue Manually', 'litespeed-cache'), 'CCSS'); ?>
-						</a>
+						<?php if ($ccss_service_hot) : ?>
+							<button class="button button-secondary" disabled>
+								<?php echo sprintf(__('Run %s Queue Manually', 'litespeed-cache'), 'CCSS'); ?>
+								- <?php echo sprintf(__('Available after %d second(s)', 'litespeed-cache'), $ccss_service_hot); ?>
+							</button>
+						<?php else : ?>
+							<a href="<?php echo Utility::build_url(Router::ACTION_CSS, CSS::TYPE_GEN_CCSS); ?>" class="button litespeed-btn-success">
+								<?php echo sprintf(__('Run %s Queue Manually', 'litespeed-cache'), 'CCSS'); ?>
+							</a>
+						<?php endif; ?>
 						<?php Doc::queue_issues(); ?>
 					<?php endif; ?>
 				</div>

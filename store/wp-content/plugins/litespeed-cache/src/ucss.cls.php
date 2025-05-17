@@ -241,8 +241,8 @@ class UCSS extends Base
 				continue;
 			}
 
-			// Exit queue if out of quota
-			if ($res === 'out_of_quota') {
+			// Exit queue if out of quota or service is hot
+			if ($res === 'out_of_quota' || $res === 'svc_hot') {
 				return;
 			}
 
@@ -327,7 +327,7 @@ class UCSS extends Base
 
 		$json = Cloud::post(Cloud::SVC_UCSS, $data, 30);
 		if (!is_array($json)) {
-			return false;
+			return $json;
 		}
 
 		// Old version compatibility
@@ -508,13 +508,6 @@ class UCSS extends Base
 		self::debug('notify() data', $post_data);
 
 		$this->_queue = $this->load_queue('ucss');
-
-		// Validate key
-		if (empty($post_data['domain_key']) || $post_data['domain_key'] !== md5($this->conf(self::O_API_KEY))) {
-			self::debug('❌ notify wrong key');
-			self::save_summary(array('notify_ts_err' => time()));
-			return Cloud::err('wrong_key');
-		}
 
 		list($post_data) = $this->cls('Cloud')->extract_msg($post_data, 'ucss');
 

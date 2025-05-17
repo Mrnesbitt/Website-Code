@@ -1,14 +1,73 @@
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #f8f5e9;
-    color: #333;
-    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0d0d0d;
+    color: #fff;
+  }
+  h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fffbfb;
+    letter-spacing: 1px;
+    margin: 40px 0 20px;
 }
 
-.music-container {
-    width: auto;
-    height: auto;
+h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    color: #f9f9f9;
+    margin-bottom: 15px;
 }
 
 
+  .music-header {
+    text-align: center;
+    padding: 3rem 1rem 1rem;
+  }
 
+  .music-header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .music-header p {
+    font-size: 1.2rem;
+    color: #aaa;
+  }
+
+  .music-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .soundcloud-track {
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #1a1a1a;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  }
+
+  iframe {
+    width: 100%;
+    border: none;
+  }
+
+  .player-caption {
+    font-size: 0.75rem;
+    text-align: center;
+    color: #ccc;
+    padding: 0.5rem;
+  }
+
+  footer {
+    margin-top: 3rem;
+  }

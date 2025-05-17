@@ -33,9 +33,10 @@ if (!empty($img_count['img.' . Img_Optm::STATUS_ERR_FETCH])) {
 	$unfinished_num += $img_count['img.' . Img_Optm::STATUS_ERR_FETCH];
 }
 
+$imgoptm_service_hot = $this->cls('Cloud')->service_hot(Cloud::SVC_IMG_OPTM . '-' . Img_Optm::CLOUD_ACTION_NEW_REQ);
 ?>
 <div class="litespeed-flex-container litespeed-column-with-boxes">
-	<div class="litespeed-width-7-10 litespeed-image-optim-summary-wrapper">
+	<div class="litespeed-width-7-10 litespeed-column-left litespeed-image-optim-summary-wrapper">
 		<div class="litespeed-image-optim-summary">
 
 			<h3>
@@ -60,9 +61,16 @@ if (!empty($img_count['img.' . Img_Optm::STATUS_ERR_FETCH])) {
 			<?php endif; ?>
 
 			<div class="litespeed-img-optim-actions">
-				<a data-litespeed-onlyonce class="button button-primary" <?php if (!empty($img_count['groups_new']) || !empty($img_count['group.' . Img_Optm::STATUS_RAW])) : ?> href="<?php echo Utility::build_url(Router::ACTION_IMG_OPTM, Img_Optm::TYPE_NEW_REQ); ?>" <?php else : ?> href='javascript:;' disabled <?php endif; ?>>
-					<span class="dashicons dashicons-images-alt2"></span>&nbsp;<?php echo __('Send Optimization Request', 'litespeed-cache'); ?>
-				</a>
+				<?php if ($imgoptm_service_hot) : ?>
+					<button class="button button-secondary" disabled>
+						<span class="dashicons dashicons-images-alt2"></span>&nbsp;<?php echo __('Send Optimization Request', 'litespeed-cache'); ?>
+						- <?php echo sprintf(__('Available after %d second(s)', 'litespeed-cache'), $imgoptm_service_hot); ?>
+					</button>
+				<?php else : ?>
+					<a data-litespeed-onlyonce class="button button-primary" <?php if (!empty($img_count['groups_new']) || !empty($img_count['group.' . Img_Optm::STATUS_RAW])) : ?> href="<?php echo Utility::build_url(Router::ACTION_IMG_OPTM, Img_Optm::TYPE_NEW_REQ); ?>" <?php else : ?> href='javascript:;' disabled <?php endif; ?>>
+						<span class="dashicons dashicons-images-alt2"></span>&nbsp;<?php echo __('Send Optimization Request', 'litespeed-cache'); ?>
+					</a>
+				<?php endif; ?>
 
 				<a data-litespeed-onlyonce class="button button-secondary" data-balloon-length="large" data-balloon-pos="right" aria-label="<?php echo __('Only press the button if the pull cron job is disabled.', 'litespeed-cache'); ?> <?php echo __('Images will be pulled automatically if the cron job is running.', 'litespeed-cache'); ?>" <?php if (!empty($img_count['img.' . Img_Optm::STATUS_NOTIFIED]) && !$is_running) : ?> href="<?php echo Utility::build_url(Router::ACTION_IMG_OPTM, Img_Optm::TYPE_PULL); ?>" <?php else : ?> href='javascript:;' disabled <?php endif; ?>>
 					<?php echo __('Pull Images', 'litespeed-cache'); ?>
@@ -219,7 +227,7 @@ if (!empty($img_count['img.' . Img_Optm::STATUS_ERR_FETCH])) {
 		</div>
 	</div>
 
-	<div class="litespeed-width-3-10">
+	<div class="litespeed-width-3-10 litespeed-column-right">
 		<div class="postbox litespeed-postbox litespeed-postbox-imgopt-info">
 			<div class="inside">
 
@@ -306,7 +314,15 @@ if (!empty($img_count['img.' . Img_Optm::STATUS_ERR_FETCH])) {
 
 			</div>
 			<div class="inside litespeed-postbox-footer litespeed-postbox-footer--compact">
+				<p><a href="<?php echo Utility::build_url(Router::ACTION_IMG_OPTM, Img_Optm::TYPE_RESET_COUNTER); ?>" class="litespeed-link-with-icon litespeed-warning">
+						<span class="dashicons dashicons-dismiss"></span><?php echo __('Soft Reset Optimization Counter', 'litespeed-cache'); ?>
+					</a></p>
 
+				<div class="litespeed-desc">
+					<?php echo sprintf(__('This will reset the %1$s. If you changed WebP/AVIF settings and want to generate %2$s for the previously optimized images, use this action.', 'litespeed-cache'), '<code>' . __('Current image post id position', 'litespeed-cache') . '</code>', 'WebP/AVIF'); ?>
+				</div>
+			</div>
+			<div class="inside litespeed-postbox-footer litespeed-postbox-footer--compact">
 				<p><a href="<?php echo Utility::build_url(Router::ACTION_IMG_OPTM, Img_Optm::TYPE_DESTROY); ?>" class="litespeed-link-with-icon litespeed-danger" data-litespeed-cfm="<?php echo __('Are you sure to destroy all optimized images?', 'litespeed-cache'); ?>">
 						<span class="dashicons dashicons-dismiss"></span><?php echo __('Destroy All Optimization Data', 'litespeed-cache'); ?>
 					</a></p>

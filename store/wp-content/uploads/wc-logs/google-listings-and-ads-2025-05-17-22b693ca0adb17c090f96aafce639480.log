@@ -1,0 +1,95 @@
+2025-05-17T03:04:54+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 222): ["Uncategorized"].
+2025-05-17T03:04:55+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\ProductSyncer::update_by_batch_requests Submitted 1 products:
+[{"woocommerce_id":222,"google_id":"online:en:US:gla_222"}]
+2025-05-17T18:09:11+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 253): ["Uncategorized"].
+2025-05-17T18:09:13+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\ProductSyncer::update_by_batch_requests Submitted 1 products:
+[{"woocommerce_id":253,"google_id":"online:en:US:gla_253"}]
+2025-05-17T18:13:53+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 256): ["Uncategorized"].
+2025-05-17T18:13:55+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\ProductSyncer::update_by_batch_requests Submitted 1 products:
+[{"woocommerce_id":256,"google_id":"online:en:US:gla_256"}]
+2025-05-17T18:15:27+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 258): ["Uncategorized"].
+2025-05-17T18:15:29+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\ProductSyncer::update_by_batch_requests Submitted 1 products:
+[{"woocommerce_id":258,"google_id":"online:en:US:gla_258"}]
+2025-05-17T18:16:14+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 258): ["Uncategorized"].
+2025-05-17T18:16:15+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\ProductSyncer::update_by_batch_requests Submitted 1 products:
+[{"woocommerce_id":258,"google_id":"online:en:US:gla_258"}]
+2025-05-17T18:19:46+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 262): ["Uncategorized"].
+2025-05-17T18:19:46+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 262) because it does not pass validation: {"woocommerce_id":262,"errors":["[price] This value should not be null."]}
+2025-05-17T18:21:28+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 264): ["Uncategorized"].
+2025-05-17T18:21:30+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\ProductSyncer::update_by_batch_requests Submitted 1 products:
+[{"woocommerce_id":264,"google_id":"online:en:US:gla_264"}]
+2025-05-17T18:22:28+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 262): ["Uncategorized"].
+2025-05-17T18:22:29+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\ProductSyncer::update_by_batch_requests Submitted 1 products:
+[{"woocommerce_id":262,"google_id":"online:en:US:gla_262"}]
+2025-05-17T18:31:43+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 267): ["Uncategorized"].
+2025-05-17T18:31:43+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 267) because it does not pass validation: {"woocommerce_id":267,"errors":["[imageLink] This value should not be blank."]}
+2025-05-17T18:33:05+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 267): ["Uncategorized"].
+2025-05-17T18:33:07+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\ProductSyncer::update_by_batch_requests Submitted 1 products:
+[{"woocommerce_id":267,"google_id":"online:en:US:gla_267"}]
+2025-05-17T21:33:29+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 272): ["Uncategorized"].
+2025-05-17T21:33:31+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\ProductSyncer::update_by_batch_requests Submitted 1 products:
+[{"woocommerce_id":272,"google_id":"online:en:US:gla_272"}]
+2025-05-17T21:33:31+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 274): ["Uncategorized"].
+2025-05-17T21:33:31+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\ProductSyncer::update_by_batch_requests Submitted 1 products:
+[{"woocommerce_id":274,"google_id":"online:en:US:gla_274"}]
+2025-05-17T21:33:31+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 276): ["Uncategorized"].
+2025-05-17T21:33:32+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\ProductSyncer::update_by_batch_requests Submitted 1 products:
+[{"woocommerce_id":276,"google_id":"online:en:US:gla_276"}]
+2025-05-17T21:33:32+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 278): ["Uncategorized"].
+2025-05-17T21:33:33+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\ProductSyncer::update_by_batch_requests Submitted 1 products:
+[{"woocommerce_id":278,"google_id":"online:en:US:gla_278"}]
+2025-05-17T21:33:33+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 280): ["Uncategorized"].
+2025-05-17T21:33:34+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\ProductSyncer::update_by_batch_requests Submitted 1 products:
+[{"woocommerce_id":280,"google_id":"online:en:US:gla_280"}]
+2025-05-17T21:33:34+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 282): ["Uncategorized"].
+2025-05-17T21:33:35+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\ProductSyncer::update_by_batch_requests Submitted 1 products:
+[{"woocommerce_id":282,"google_id":"online:en:US:gla_282"}]
+2025-05-17T21:33:35+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 284): ["Uncategorized"].
+2025-05-17T21:33:36+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\ProductSyncer::update_by_batch_requests Submitted 1 products:
+[{"woocommerce_id":284,"google_id":"online:en:US:gla_284"}]
+2025-05-17T21:33:36+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 286): ["Uncategorized"].
+2025-05-17T21:33:37+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\ProductSyncer::update_by_batch_requests Submitted 1 products:
+[{"woocommerce_id":286,"google_id":"online:en:US:gla_286"}]
+2025-05-17T21:33:37+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 288): ["Uncategorized"].
+2025-05-17T21:33:38+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\ProductSyncer::update_by_batch_requests Submitted 1 products:
+[{"woocommerce_id":288,"google_id":"online:en:US:gla_288"}]
+2025-05-17T21:33:38+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 289): ["Uncategorized"].
+2025-05-17T21:33:38+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 289) because it does not pass validation: {"woocommerce_id":289,"errors":["[imageLink] This value should not be blank."]}
+2025-05-17T21:33:38+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 290): ["Uncategorized"].
+2025-05-17T21:33:38+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 290) because it does not pass validation: {"woocommerce_id":290,"errors":["[imageLink] This value should not be blank."]}
+2025-05-17T21:33:38+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 291): ["Uncategorized"].
+2025-05-17T21:33:38+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 291) because it does not pass validation: {"woocommerce_id":291,"errors":["[imageLink] This value should not be blank."]}
+2025-05-17T21:33:38+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 292): ["Uncategorized"].
+2025-05-17T21:33:38+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 292) because it does not pass validation: {"woocommerce_id":292,"errors":["[description] This value should not be blank.","[imageLink] This value should not be blank."]}
+2025-05-17T21:33:38+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 293): ["Uncategorized"].
+2025-05-17T21:33:38+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 293) because it does not pass validation: {"woocommerce_id":293,"errors":["[description] This value should not be blank.","[imageLink] This value should not be blank."]}
+2025-05-17T21:33:38+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 294): ["Uncategorized"].
+2025-05-17T21:33:38+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 294) because it does not pass validation: {"woocommerce_id":294,"errors":["[description] This value should not be blank.","[imageLink] This value should not be blank."]}
+2025-05-17T21:33:38+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 295): ["Uncategorized"].
+2025-05-17T21:33:38+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 295) because it does not pass validation: {"woocommerce_id":295,"errors":["[description] This value should not be blank.","[imageLink] This value should not be blank."]}
+2025-05-17T21:33:38+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 296): ["Uncategorized"].
+2025-05-17T21:33:38+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 296) because it does not pass validation: {"woocommerce_id":296,"errors":["[description] This value should not be blank.","[imageLink] This value should not be blank."]}
+2025-05-17T21:33:38+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 297): ["Uncategorized"].
+2025-05-17T21:33:38+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 297) because it does not pass validation: {"woocommerce_id":297,"errors":["[description] This value should not be blank.","[imageLink] This value should not be blank."]}
+2025-05-17T21:33:38+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 298): ["Uncategorized"].
+2025-05-17T21:33:38+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 298) because it does not pass validation: {"woocommerce_id":298,"errors":["[description] This value should not be blank.","[imageLink] This value should not be blank."]}
+2025-05-17T21:33:38+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 299): ["Uncategorized"].
+2025-05-17T21:33:38+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 299) because it does not pass validation: {"woocommerce_id":299,"errors":["[description] This value should not be blank.","[imageLink] This value should not be blank."]}
+2025-05-17T21:33:39+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 300): ["Uncategorized"].
+2025-05-17T21:33:39+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 300) because it does not pass validation: {"woocommerce_id":300,"errors":["[description] This value should not be blank.","[imageLink] This value should not be blank."]}
+2025-05-17T21:33:39+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 301): ["Uncategorized"].
+2025-05-17T21:33:39+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 301) because it does not pass validation: {"woocommerce_id":301,"errors":["[description] This value should not be blank.","[imageLink] This value should not be blank."]}
+2025-05-17T21:33:39+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 302): ["Uncategorized"].
+2025-05-17T21:33:39+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 302) because it does not pass validation: {"woocommerce_id":302,"errors":["[description] This value should not be blank.","[imageLink] This value should not be blank."]}
+2025-05-17T21:33:39+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 303): ["Uncategorized"].
+2025-05-17T21:33:39+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 303) because it does not pass validation: {"woocommerce_id":303,"errors":["[description] This value should not be blank.","[imageLink] This value should not be blank."]}
+2025-05-17T21:33:39+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 304): ["Uncategorized"].
+2025-05-17T21:33:39+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 304) because it does not pass validation: {"woocommerce_id":304,"errors":["[description] This value should not be blank.","[imageLink] This value should not be blank."]}
+2025-05-17T21:33:39+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 305): ["Uncategorized"].
+2025-05-17T21:33:39+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 305) because it does not pass validation: {"woocommerce_id":305,"errors":["[description] This value should not be blank.","[imageLink] This value should not be blank."]}
+2025-05-17T21:33:39+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 306): ["Uncategorized"].
+2025-05-17T21:33:39+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 306) because it does not pass validation: {"woocommerce_id":306,"errors":["[description] This value should not be blank.","[imageLink] This value should not be blank."]}
+2025-05-17T21:33:39+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 307): ["Uncategorized"].
+2025-05-17T21:33:39+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 307) because it does not pass validation: {"woocommerce_id":307,"errors":["[description] This value should not be blank.","[imageLink] This value should not be blank."]}
+2025-05-17T21:33:39+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\WCProductAdapter::map_product_categories Product category (ID: 308): ["Uncategorized"].
+2025-05-17T21:33:39+00:00 DEBUG Automattic\WooCommerce\GoogleListingsAndAds\Product\BatchProductHelper::validate_and_generate_update_request_entries Skipping product (ID: 308) because it does not pass validation: {"woocommerce_id":308,"errors":["[description] This value should not be blank.","[imageLink] This value should not be blank."]}
