@@ -17,12 +17,17 @@ body {
     align-items: flex-start;
     border: 1px solid #DCDCDC;
     border-radius: 12px;
-    padding: 15px;
+    padding: 30px;
     max-width: 600px;
     background-color: #fafafa;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
+.button-box{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
 .book-img img {
     width: 120px;
     height: auto;
@@ -38,6 +43,7 @@ body {
     margin: 0 0 8px 0;
     font-size: 18px;
     font-weight: bold;
+    margin-left: 20px
 }
 
 .book-info .author {
