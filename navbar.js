@@ -13,3 +13,14 @@ document.getElementById('hamburger').addEventListener('click', function() {
     const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('active'); // Add or remove the active class
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.querySelector(".nav-links");
+  
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("nav-active");
+      hamburger.classList.toggle("toggle");
+    });
+  });
+  
