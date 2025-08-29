@@ -1,139 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Buy Our Books</title>
-    <link rel="stylesheet" href="footer2.css" />
-    <link rel="stylesheet" href="navbar.css" />
-    <link rel="stylesheet" href="Buy.css" />
-    <style>
-      /* Center container flexbox */
-      .books-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* center horizontally */
-        gap: 20px; /* spacing between cards */
-        padding: 20px;
-      }
-      .book-box {
-        max-width: 600px;
-        width: 100%;
-      }
-      .book-card {
-        display: flex;
-        border: 1px solid #DCDCDC;
-        border-radius: 12px;
-        padding: 15px;
-        gap: 15px;
-        background: #fff;
-      }
-      .book-img img {
-        width: 96px;
-        height: auto;
-        border-radius: 6px;
-        object-fit: contain;
-      }
-      .book-info {
-        flex: 1;
-      }
-      .book-info h2, .book-info h3 {
-        margin: 0 0 8px;
-      }
-      .author {
-        font-style: italic;
-        margin-bottom: 12px;
-      }
-      .buy-button, .buy-button-inline {
-        background: #FEBE10;
-        border-radius: 8px;
-        color: black;
-        text-decoration: none;
-        padding: 8px 16px;
-        font: normal normal bold 16px/22px Open Sans;
-        display: inline-block;
-        margin-right: 10px;
-        transition: background-color 0.3s ease;
-      }
-      .buy-button:hover, .buy-button-inline:hover {
-        background: #d9a80a;
-      }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Buy Our Books</title>
+  <link rel="stylesheet" href="footer2.css" />
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="Buy.css" />
+  <style>
+    .books-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .book-box {
+      max-width: 600px;
+      width: 100%;
+    }
+    .book-card {
+      display: flex;
+      border: 1px solid #DCDCDC;
+      border-radius: 12px;
+      padding: 15px;
+      gap: 15px;
+      background: #fff;
+    }
+    .book-img img {
+      width: 96px;
+      height: auto;
+      border-radius: 6px;
+      object-fit: contain;
+    }
+    .book-info {
+      flex: 1;
+    }
+    .book-info h2, .book-info h3 {
+      margin: 0 0 8px;
+    }
+    .author {
+      font-style: italic;
+      margin-bottom: 12px;
+    }
+    .buy-button, .buy-button-inline {
+      background: #FEBE10;
+      border-radius: 8px;
+      color: black;
+      text-decoration: none;
+      padding: 8px 16px;
+      font: normal normal bold 16px/22px Open Sans;
+      display: inline-block;
+      margin-right: 10px;
+      transition: background-color 0.3s ease;
+    }
+    .buy-button:hover, .buy-button-inline:hover {
+      background: #d9a80a;
+    }
+  </style>
 </head>
 <body>
-    <!-- Lightbox Animation -->
-    <div id="lightbox" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:9999;" onclick="this.style.display='none'">
-        <img id="lightbox-img" src="" style="max-width:90%; max-height:90%; border-radius:10px;" />
+  <!-- Lightbox Animation -->
+  <div id="lightbox" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:9999;" onclick="this.style.display='none'">
+    <img id="lightbox-img" src="" style="max-width:90%; max-height:90%; border-radius:10px;" />
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="Images/sbc logo.png" alt="Logo" />
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="Buy.html">Buy Our Books!</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="https://simplebutcomplex.com/store/">Comics</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="upcoming.html">Coming Soon</a></li>
+      <li><a href="Donations.html">Contribute</a></li>
+      <li><a href="Legal.html">Legal</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span><p>Menu</p>
+    </div>
+  </nav>
+
+  <!-- BOOKS CONTAINER -->
+  <div class="books-container">
+    <!-- BOOK 1 -->
+    <div class="book-box">
+      <div class="book-card">
+        <div class="book-img">
+          <img src="https://image-hub-cloud.lightningsource.com/2011-04-01/Images/front_cover/x200/sku/9798218625467.jpg?viewkey=f510ae7868cdc8cccbebe80e6445b84ca74a45fe0c28ae022b58bd6fb2ce1d3f" alt="Gems and Journeys Cover" />
+        </div>
+        <div class="book-info">
+          <h2>Gems and Journeys - Chapter 1</h2>
+          <p class="author">Nesbitt, Steven and LaBoard, Kymet</p>
+          <a href="https://shop.ingramspark.com/b/084?params=O4HkZUmhfJ5q2u5UkmnqkvtBKjD0mtsIATSz15RJS5R" target="_blank" class="buy-button">Buy Now</a>
+          <a href="https://mrnesbitt.gumroad.com/l/aqwgiq" target="_blank" class="buy-button">eBook</a>
+        </div>
+      </div>
     </div>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="logo">
-            <a href="index.html">
-                <img src="Images/sbc logo.png" alt="Logo" />
-            </a>
+    <!-- BOOK 2 -->
+    <div class="book-box">
+      <div class="book-card">
+        <div class="book-img">
+          <img src="https://image-hub-cloud.lightningsource.com/2011-04-01/Images/front_cover/x200/sku/9798218772703.jpg?viewkey=0540e0682acf167842395e238bdefe57323ef22e0ce9d5c8c713c47d8e04597d" alt="Gems and Journeys Chapter 2 Cover" />
         </div>
-
-        <ul class="nav-links">
-            <li><a href="Buy.html">Buy Our Books!</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="https://simplebutcomplex.com/store/">Comics</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="upcoming.html">Coming Soon</a></li>
-            <li><a href="Donations.html">Contribute</a></li>
-            <li><a href="Legal.html">Legal</a></li>
-        </ul>
-
-        <div class="hamburger" id="hamburger">
-            <span></span><span></span><span></span><p>Menu</p>
+        <div class="book-info">
+          <h2>Gems and Journeys - Chapter 2</h2>
+          <p class="author">Nesbitt, Steven and LaBoard, Kymet</p>
+          <a href="https://shop.ingramspark.com/b/084?params=WK42HruxLrdBXkfmHDuZqQPgq7v5iSpxz0KIf2HiMqk" target="_blank" class="buy-button">Buy Now</a>
         </div>
-    </nav>
-
-    <!-- BOOKS CONTAINER -->
-    <div class="books-container">
-        <!-- FIRST BOOK CARD -->
-        <div class="book-box">
-            <div class="book-card">
-                <div class="book-img">
-                    <img src="https://image-hub-cloud.lightningsource.com/2011-04-01/Images/front_cover/x200/sku/9798218625467.jpg?viewkey=f510ae7868cdc8cccbebe80e6445b84ca74a45fe0c28ae022b58bd6fb2ce1d3f" alt="Gems and Journeys Cover" />
-                </div>
-                <div class="book-info">
-                    <h2>Gems and Journeys - Chapter 1</h2>
-                    <p class="author">Nesbitt, Steven and LaBoard, Kymet</p>
-                    <a href="https://shop.ingramspark.com/b/084?params=O4HkZUmhfJ5q2u5UkmnqkvtBKjD0mtsIATSz15RJS5R" target="_blank" class="buy-button">Buy Now</a>
-                    <a href="https://mrnesbitt.gumroad.com/l/aqwgiq" target="_blank" class="buy-button">eBook</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- SECOND BOOK CARD -->
-        <div class="book-box">
-            <div class="book-card">
-                <div class="book-img">
-                    <img src="https://image-hub-cloud.lightningsource.com/2011-04-01/Images/front_cover/x200/sku/9798218725808.jpg?viewkey=f391ca0df27bec291151c8b783cdf5cdafa050e932541759f7aaaeaf53edbec5" alt="Go Home, Anthony Cover" />
-                </div>
-                <div class="book-info">
-                    <h3>Go Home, Anthony</h3>
-                    <p class="author">Nesbitt, Steven E and Geddis, Marcella and LaBoard, Kymet</p>
-                    <a href="https://shop.ingramspark.com/b/084?params=4pfxk1MSCescW9KMjVmnw5e1KkYUwEQwBdQA0jGzW7J" target="_blank" class="buy-button-inline">Buy Now</a>
-                    <a href="https://mrnesbitt.gumroad.com/l/GoHomeAnt" target="_blank" class="buy-button">eBook</a>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
 
-    <div class="button-box" style="text-align:center; margin-top: 30px;">
-        <a href="https://simplebutcomplex.com/store/" target="_blank" class="buy-button">Check Out More Comics!</a>
+    <!-- BOOK 3 -->
+    <div class="book-box">
+      <div class="book-card">
+        <div class="book-img">
+          <img src="https://image-hub-cloud.lightningsource.com/2011-04-01/Images/front_cover/x200/sku/9798218725808.jpg?viewkey=f391ca0df27bec291151c8b783cdf5cdafa050e932541759f7aaaeaf53edbec5" alt="Go Home, Anthony Cover" />
+        </div>
+        <div class="book-info">
+          <h3>Go Home, Anthony</h3>
+          <p class="author">Nesbitt, Steven E and Geddis, Marcella and LaBoard, Kymet</p>
+          <a href="https://shop.ingramspark.com/b/084?params=4pfxk1MSCescW9KMjVmnw5e1KkYUwEQwBdQA0jGzW7J" target="_blank" class="buy-button">Buy Now</a>
+          <a href="https://mrnesbitt.gumroad.com/l/GoHomeAnt" target="_blank" class="buy-button">eBook</a>
+        </div>
+      </div>
     </div>
+  </div>
 
-    <script src="navbar.js"></script>
-    <script>
-        document.querySelectorAll('.preview-images img').forEach(img => {
-            img.onclick = () => {
-                document.getElementById('lightbox-img').src = img.src;
-                document.getElementById('lightbox').style.display = 'flex';
-            };
-        });
-    </script>
+  <div class="button-box" style="text-align:center; margin-top: 30px;">
+    <a href="https://simplebutcomplex.com/store/" target="_blank" class="buy-button">Check Out More Comics!</a>
+  </div>
+
+  <script src="navbar.js"></script>
+  <script>
+    document.querySelectorAll('.book-img img').forEach(img => {
+      img.onclick = () => {
+        document.getElementById('lightbox-img').src = img.src;
+        document.getElementById('lightbox').style.display = 'flex';
+      };
+    });
+  </script>
 </body>
 </html>
