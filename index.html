@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- MailerLite Universal -->
-<script>
-  (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-  .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-  n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-  (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-  ml('account', '1153315');
-</script>
-<!-- End MailerLite Universal -->
 <head>
+  <!-- MailerLite Universal -->
+  <script>
+    (function(w,d,e,u,f,l,n){
+      w[f]=w[f]||function(){
+        (w[f].q=w[f].q||[]).push(arguments);
+      },
+      l=d.createElement(e),
+      l.async=1,
+      l.src=u,
+      n=d.getElementsByTagName(e)[0],
+      n.parentNode.insertBefore(l,n);
+    })
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '1153315');
+  </script>
+  <!-- End MailerLite Universal -->
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home - Simple But Complex</title>
@@ -17,8 +25,7 @@
   <link rel="stylesheet" href="navbar.css" />
   <link rel="stylesheet" href="Banner.css" />
   <link rel="stylesheet" href="footer2.css" />
-
-
+</head>
 
 <body>
   <!-- Hero Section -->
@@ -38,26 +45,32 @@
     <a href="Buy.html" class="section-card" style="background-image: url('Images/Screenshot 2025-03-03 180428.jpg');">
       <span>Buy Our Books</span>
     </a>
-    <a href="https://simplebutcomplex.com/store/" class="section-card" style="background-image: url('Images/comic-5345814_1280.jpg');">
-      <span> Comic Book Shop</span>
 
-      <a href="Donations.html" class="section-card" style="background-image: url('Images/usedbooks.jpg')">
-        <span>Help Your Community</span>
-      </a>
-      
+    <a href="https://simplebutcomplex.com/store/" class="section-card" style="background-image: url('Images/comic-5345814_1280.jpg');">
+      <span>Comic Book Shop</span>
+    </a>
+
+    <a href="Donations.html" class="section-card" style="background-image: url('Images/usedbooks.jpg')">
+      <span>Help Your Community</span>
+    </a>
+
     <a href="blog.html" class="section-card" style="background-image: url('Images/blog-684748_1280.jpg');">
       <span>Blog</span>
     </a>
 
-    <a href="about.html" class="section-card" style="background-image: url('Images/About\ us.jpg');">
+    <a href="about.html" class="section-card" style="background-image: url('Images/About us.jpg');">
       <span>About Us</span>
     </a>
-    </a>
-   
+
     <a href="Legal.html" class="section-card" style="background-image: url('Images/hammer-719066_1280.jpg');">
       <span>Legal Stuff</span>
     </a>
   </section>
+
+  <!-- MailerLite Popup Trigger -->
+  <a class="ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'm4De7H', true)">
+    Join the Mailing List
+  </a>
 
   <!-- Footer -->
   <footer>
@@ -70,12 +83,21 @@
       <div class="footer-social">
         <a href="https://www.instagram.com/thestreetcomic/" target="_blank">Instagram</a>
         <a href="https://bsky.app/profile/dayboynes.bsky.social" target="_blank">Bluesky</a>
-        <a href="https://www.facebook.com/SimpleButComplex1" target=Facebook></a>
+        <a href="https://www.facebook.com/SimpleButComplex1" target="_blank">Facebook</a>
       </div>
       <p>&copy; 2025 Simple But Complex. All Rights Reserved.</p>
     </div>
   </footer>
 
   <script src="navbar.js"></script>
+
+  <!-- Optional: Auto-show popup after 5 seconds -->
+  <script>
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        ml('show', 'm4De7H', true);
+      }, 5000);
+    });
+  </script>
 </body>
 </html>
