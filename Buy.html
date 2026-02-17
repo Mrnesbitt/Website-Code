@@ -4,156 +4,122 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Buy Our Books</title>
+
   <link rel="stylesheet" href="footer2.css" />
   <link rel="stylesheet" href="navbar.css" />
   <link rel="stylesheet" href="Buy.css" />
 
- <!-- MailerLite Universal -->
-<script>
-    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-    ml('account', '1153315');
-</script>
-<!-- End MailerLite Universal -->
- 
-  <style>
-    .books-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-      padding: 20px;
-    }
-    .book-box {
-      max-width: 600px;
-      width: 100%;
-    }
-    .book-card {
-      display: flex;
-      border: 1px solid #DCDCDC;
-      border-radius: 12px;
-      padding: 15px;
-      gap: 15px;
-      background: #fff;
-    }
-    .book-img img {
-      width: 96px;
-      height: auto;
-      border-radius: 6px;
-      object-fit: contain;
-    }
-    .book-info {
-      flex: 1;
-    }
-    .book-info h2, .book-info h3 {
-      margin: 0 0 8px;
-    }
-    .author {
-      font-style: italic;
-      margin-bottom: 12px;
-    }
-    .buy-button, .buy-button-inline {
-      background: #FEBE10;
-      border-radius: 8px;
-      color: black;
-      text-decoration: none;
-      padding: 8px 16px;
-      font: normal normal bold 16px/22px Open Sans;
-      display: inline-block;
-      margin-right: 10px;
-      transition: background-color 0.3s ease;
-    }
-    .buy-button:hover, .buy-button-inline:hover {
-      background: #d9a80a;
-    }
-  </style>
-</head>
-<body>
-  <!-- Lightbox Animation -->
-  <div id="lightbox" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:9999;" onclick="this.style.display='none'">
-    <img id="lightbox-img" src="" style="max-width:90%; max-height:90%; border-radius:10px;" />
-  </div>
-
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="logo">
-      <a href="index.html">
-        <img src="Images/sbc logo.png" alt="Logo" />
-      </a>
-    </div>
-    <ul class="nav-links">
-      <li><a href="Buy.html">Buy Our Books!</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="https://mailchi.mp/56fbcfffff3e/bite-the-dust">Coming Soon</a></li>
-      <li><a href="Donations.html">Contribute</a></li>
-      <li><a href="Legal.html">Legal</a></li>
-    </ul>
-    <div class="hamburger" id="hamburger">
-      <span></span><span></span><span></span><p>Menu</p>
-    </div>
-  </nav>
-
-  <!-- BOOKS CONTAINER -->
-  <div class="books-container">
-    <!-- BOOK 1 -->
-    <div class="book-box">
-      <div class="book-card">
-        <div class="book-img">
-          <img src="Images/G&J1.jpeg" alt="Gems and Journeys Cover" />
-        </div>
-        <div class="book-info">
-          <h2>Gems and Journeys - Chapter 1</h2>
-          <p class="author">Nesbitt, Steven and LaBoard, Kymet</p>
-          <a href="https://shop.ingramspark.com/b/084?params=O4HkZUmhfJ5q2u5UkmnqkvtBKjD0mtsIATSz15RJS5R" target="_blank" class="buy-button">Buy Now</a>
-          <a href="https://shop.ingramspark.com/b/084?params=O4HkZUmhfJ5q2u5UkmnqkvtBKjD0mtsIATSz15RJS5R" target="_blank" class="buy-button">Buy Now</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- BOOK 2 -->
-    <div class="book-box">
-      <div class="book-card">
-        <div class="book-img">
-          <img src="Images/G&J2.JPG" alt="Gems and Journeys Chapter 2 Cover" />
-        </div>
-        <div class="book-info">
-          <h2>Gems and Journeys - Chapter 2</h2>
-          <p class="author">Nesbitt, Steven and LaBoard, Kymet</p>
-          <a href="https://shop.ingramspark.com/b/084?params=WK42HruxLrdBXkfmHDuZqQPgq7v5iSpxz0KIf2HiMqk" target="_blank" class="buy-button">Buy Now</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- BOOK 3 -->
-    <div class="book-box">
-      <div class="book-card">
-        <div class="book-img">
-          <img src="Images/GHA.png" alt="Go Home, Anthony Cover" />
-        </div>
-        <div class="book-info">
-          <h3>Go Home, Anthony</h3>
-          <p class="author">Nesbitt, Steven E and Geddis, Marcella and LaBoard, Kymet</p>
-          <a href="https://shop.ingramspark.com/b/084?params=4pfxk1MSCescW9KMjVmnw5e1KkYUwEQwBdQA0jGzW7J" target="_blank" class="buy-button">Buy Now</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="button-box" style="text-align:center; margin-top: 30px;">
-    <a href="https://simplebutcomplex.com/store/" target="_blank" class="buy-button">Check Out More Comics!</a>
-  </div>
-
-  <script src="navbar.js"></script>
+  <!-- MailerLite -->
   <script>
-    document.querySelectorAll('.book-img img').forEach(img => {
-      img.onclick = () => {
-        document.getElementById('lightbox-img').src = img.src;
-        document.getElementById('lightbox').style.display = 'flex';
-      };
-    });
+    (function(w,d,e,u,f,l,n){
+      w[f]=w[f]||function(){(w[f].q=w[f].q||[]).push(arguments);}
+      ,l=d.createElement(e),l.async=1,l.src=u,
+      n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);
+    })(window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '1153315');
   </script>
+</head>
+
+<body>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.8); justify-content:center; align-items:center; z-index:9999;" onclick="this.style.display='none'">
+  <img id="lightbox-img" style="max-width:90%; max-height:90%; border-radius:10px;" />
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">
+    <a href="index.html">
+      <img src="Images/sbc logo.png" alt="Logo" />
+    </a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="Buy.html">Buy Our Books!</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="https://mailchi.mp/56fbcfffff3e/bite-the-dust">Coming Soon</a></li>
+    <li><a href="Donations.html">Contribute</a></li>
+    <li><a href="Legal.html">Legal</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span><p>Menu</p>
+  </div>
+</nav>
+
+<!-- BOOKS -->
+<section class="books-container">
+
+  <article class="book-card">
+    <div class="book-img">
+      <img src="Images/G&J1.jpeg" alt="Gems and Journeys Chapter 1">
+    </div>
+    <div class="book-info">
+      <h2>Gems and Journeys – Chapter 1</h2>
+      <p class="author">Steven Nesbitt & Kymet LaBoard</p>
+      <a href="https://shop.ingramspark.com/b/084?params=O4HkZUmhfJ5q2u5UkmnqkvtBKjD0mtsIATSz15RJS5R" target="_blank" class="buy-button">Buy Now</a>
+    </div>
+  </article>
+
+  <article class="book-card">
+    <div class="book-img">
+      <img src="Images/G&J2.JPG" alt="Gems and Journeys Chapter 2">
+    </div>
+    <div class="book-info">
+      <h2>Gems and Journeys – Chapter 2</h2>
+      <p class="author">Steven Nesbitt & Kymet LaBoard</p>
+      <a href="https://shop.ingramspark.com/b/084?params=WK42HruxLrdBXkfmHDuZqQPgq7v5iSpxz0KIf2HiMqk" target="_blank" class="buy-button">Buy Now</a>
+    </div>
+  </article>
+
+  <article class="book-card">
+    <div class="book-img">
+      <img src="Images/GHA.png" alt="Go Home, Anthony">
+    </div>
+    <div class="book-info">
+      <h2>Go Home, Anthony</h2>
+      <p class="author">Steven Nesbitt, Marcella Geddis, Kymet LaBoard</p>
+      <a href="https://shop.ingramspark.com/b/084?params=4pfxk1MSCescW9KMjVmnw5e1KkYUwEQwBdQA0jGzW7J" target="_blank" class="buy-button">Buy Now</a>
+    </div>
+  </article>
+
+  <html>
+<div style="border: 1px solid #DCDCDC; border-radius: 12px; padding: 15px; display: flex; width:300px;">
+    <div style="display: flex; flex: 45%; padding-right: 15px;">
+        <img src="https://image-hub-cloud.lightningsource.com/2011-04-01/Images/front_cover/x200/sku/9798218938574.jpg?viewkey=44460c68462586e37a9375664348b445a46a3ad35e2e288bf794be0878a387b6" style="width: 96px; height: auto; align-self: flex-start;" />
+    </div>
+    <div style="flex: 55%;">
+        <div style="text-align: left; font: normal normal bold 16px/22px Open Sans; padding: 5px;">
+            Pitch to Publish: How to Take Your Comic from Sket ....
+        </div>
+        <div style="text-align: left; font: italic normal normal 13px/18px Open Sans; padding: 5px;">
+             Nesbitt, Steven and Geddis, Marcella and Franklin, Jordan
+         </div>
+         <div>
+            <a href="https://shop.ingramspark.com/b/084?params=1hxNr4BQPfoceUW4FfduBAy4hFnCKhH4FzKBiRXwAiy" target="_blank" style="background: #FEBE10 0% 0% no-repeat padding-box; border-radius:8px; color:black; text-decoration:none; width: 163px; height: 34px; display: table-cell; text-align: center; vertical-align: middle; font: normal normal bold 16px/22px Open Sans;">Buy Now</a>
+         </div>
+    </div>
+</div></html>
+
+  </article>
+
+</section>
+
+<div class="button-box">
+  <a href="https://simplebutcomplex.com/store/" target="_blank" class="buy-button">
+    Check Out More Comics!
+  </a>
+</div>
+
+<script src="navbar.js"></script>
+<script>
+  document.querySelectorAll('.book-img img').forEach(img => {
+    img.onclick = () => {
+      document.getElementById('lightbox-img').src = img.src;
+      document.getElementById('lightbox').style.display = 'flex';
+    };
+  });
+</script>
+
 </body>
 </html>
