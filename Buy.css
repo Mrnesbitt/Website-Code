@@ -1,3 +1,4 @@
+/* ===== BASE ===== */
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -8,9 +9,9 @@ body {
 /* ===== BOOK GRID ===== */
 .books-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 24px;
-    padding: 30px;
+    padding: 24px;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -33,6 +34,7 @@ body {
     height: auto;
     border-radius: 6px;
     cursor: pointer;
+    flex-shrink: 0;
 }
 
 /* ===== BOOK INFO ===== */
@@ -72,5 +74,59 @@ body {
 .button-box {
     display: flex;
     justify-content: center;
-    padding: 30px 0;
+    padding: 32px 16px;
+}
+
+/* =====================================================
+   📱 MOBILE OPTIMIZATION (phones)
+===================================================== */
+@media (max-width: 600px) {
+
+    .books-container {
+        grid-template-columns: 1fr;
+        padding: 16px;
+    }
+
+    .book-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .book-img img {
+        width: 140px;
+        margin-bottom: 12px;
+    }
+
+    .book-info h2 {
+        font-size: 17px;
+    }
+
+    .book-info .author {
+        font-size: 13px;
+    }
+
+    .buy-button {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+}
+
+/* =====================================================
+   📱 TABLET OPTIMIZATION
+===================================================== */
+@media (min-width: 601px) and (max-width: 900px) {
+
+    .books-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .book-card {
+        padding: 18px;
+    }
+
+    .book-img img {
+        width: 100px;
+    }
 }
